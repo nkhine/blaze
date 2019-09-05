@@ -29,5 +29,5 @@ RUN set -eux && \
 
 FROM amazonlinux
 WORKDIR /
-COPY --from=build /tmp/blaze/blaze /usr/local/bin/
+COPY --from=build /tmp/blaze/blaze /usr/local/bin
 CMD ["/usr/local/bin/blaze"]
